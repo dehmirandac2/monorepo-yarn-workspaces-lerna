@@ -2,7 +2,7 @@
 
 exports[`Homepage renders correctly 1`] = `
 <h1>
-  My Homepage
+  My Homepage teste
   <button
     className=""
   />

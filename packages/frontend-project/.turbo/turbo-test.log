@@ -1,0 +1,12 @@
+[32m@clients/frontend-project:test: [0mcache hit, replaying output [2me0dbf9375ad61307[0m
+[32m@clients/frontend-project:test: [0mwarning package.json: No license field
+[32m@clients/frontend-project:test: [0m$ jest
+[32m@clients/frontend-project:test: [0mPASS src/homepage/Homepage.spec.js
+[32m@clients/frontend-project:test: [0m  Homepage
+[32m@clients/frontend-project:test: [0m    ✓ renders correctly (11 ms)
+[32m@clients/frontend-project:test: [0m
+[32m@clients/frontend-project:test: [0mTest Suites: 1 passed, 1 total
+[32m@clients/frontend-project:test: [0mTests:       1 passed, 1 total
+[32m@clients/frontend-project:test: [0mSnapshots:   1 passed, 1 total
+[32m@clients/frontend-project:test: [0mTime:        0.525 s, estimated 1 s
+[32m@clients/frontend-project:test: [0mRan all test suites.

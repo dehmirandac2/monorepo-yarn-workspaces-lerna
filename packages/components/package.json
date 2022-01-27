@@ -3,6 +3,9 @@
   "version": "1.0.2",
   "main": "lib/index.js",
   "module": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",

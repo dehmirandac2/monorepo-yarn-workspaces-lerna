@@ -1,0 +1,12 @@
+[35m@clients/components:test: [0mcache hit, replaying output [2m4ed5a4960850e0f7[0m
+[35m@clients/components:test: [0mwarning package.json: No license field
+[35m@clients/components:test: [0m$ jest
+[35m@clients/components:test: [0mPASS src/button/Button.spec.js
+[35m@clients/components:test: [0m  Button
+[35m@clients/components:test: [0m    ✓ renders correctly (12 ms)
+[35m@clients/components:test: [0m
+[35m@clients/components:test: [0mTest Suites: 1 passed, 1 total
+[35m@clients/components:test: [0mTests:       1 passed, 1 total
+[35m@clients/components:test: [0mSnapshots:   1 passed, 1 total
+[35m@clients/components:test: [0mTime:        0.49 s, estimated 1 s
+[35m@clients/components:test: [0mRan all test suites.
