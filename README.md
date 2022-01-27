@@ -8,7 +8,7 @@
 - _yarn bootstrap_: Instala as dependências dos pacotes na raiz (node_modules)
 - _yarn changed_: Verifica quais pacotes tiveram alterações
 - _yarn version_: Release dos pacotes. Definindo a nova versão (patch, minor, major)
-- _yarn unit_: Roda os testes de todos os pacotes
+- _yarn unit_: Roda os testes de todos os pacotes (Usa [Turborepo](https://turborepo.org/) para paralelizar o processo)
 - _yarn coverage_: Roda o teste coverage para os pacotes
 
 ## Lerna
@@ -51,7 +51,7 @@ Utilizando o [Yarn Workspaces](https://classic.yarnpkg.com/lang/en/docs/workspac
 }
 ```
 
-Para instalar as dependências com Yarn, usando -W você instrui o Yarn a instalar as dependências fornecidas para todo o espaço de trabalho. Essas dependências geralmente são compartilhadas entre todos os pacotes.
+Para instalar as dependências com Yarn, usando `-W` você instrui o Yarn a instalar as dependências fornecidas para todo o espaço de trabalho. Essas dependências geralmente são compartilhadas entre todos os pacotes.
 
 Exemplo:
 
@@ -98,6 +98,10 @@ Também queremos vincular nossas dependências raiz ao nosso pacote recém-criad
 ```
 
 Agora podemos simplesmente executar yarn bootstrap para instalar e vincular todas as dependências.
+
+## Turborepo
+
+[Turborepo](https://turborepo.org/docs/guides/migrate-from-lerna) é mais rápido que o Lerna para executar algumas tasks, já que utiliza cache e consegue paralelizar
 
 ## How install a local package
 
