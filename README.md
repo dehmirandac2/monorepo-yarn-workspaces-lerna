@@ -103,7 +103,7 @@ Agora podemos simplesmente executar yarn bootstrap para instalar e vincular toda
 
 [Turborepo](https://turborepo.org/docs/guides/migrate-from-lerna) é mais rápido que o Lerna para executar algumas tasks, já que utiliza cache e consegue paralelizar
 
-## How install a local package
+## Como instalar uma dependências local
 
 ```js
 yarn add file:packages/components
