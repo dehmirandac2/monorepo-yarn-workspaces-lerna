@@ -1,3 +1,7 @@
+## Artigo de referência
+
+[Criando Monorepo com Lerna e Yarn Workspaces](https://oieduardorabelo.medium.com/criando-monorepo-com-lerna-e-yarn-workspaces-9e1e65562811)
+
 ## Lerna
 
 `Lerna exec` irá pegar qualquer comando e executá-lo em todos os pacotes diferentes. Este comando instrui o Babel a executar em paralelo sobre cada pacote, puxando da pasta /src e compilando na pasta /lib. Não queremos incluir quaisquer testes ou histórias (que veremos mais tarde) no resultado compilado
