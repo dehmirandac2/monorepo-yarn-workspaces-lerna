@@ -1,6 +1,6 @@
 ## Lerna
 
-Lerna exec irá pegar qualquer comando e executá-lo em todos os pacotes diferentes. Este comando instrui o Babel a executar em paralelo sobre cada pacote, puxando da pasta /src e compilando na pasta /lib. Não queremos incluir quaisquer testes ou histórias (que veremos mais tarde) no resultado compilado
+`Lerna exec` irá pegar qualquer comando e executá-lo em todos os pacotes diferentes. Este comando instrui o Babel a executar em paralelo sobre cada pacote, puxando da pasta /src e compilando na pasta /lib. Não queremos incluir quaisquer testes ou histórias (que veremos mais tarde) no resultado compilado
 
 ```js
 // Em ./package.json
