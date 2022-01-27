@@ -2,6 +2,15 @@
 
 [Criando Monorepo com Lerna e Yarn Workspaces](https://oieduardorabelo.medium.com/criando-monorepo-com-lerna-e-yarn-workspaces-9e1e65562811)
 
+## Comandos
+
+- _yarn build_: Gera o build de cada um dos pacotes, ignorando alguns arquivos (testes, por exemplo)
+- _yarn bootstrap_: Instala as dependências dos pacotes na raiz (node_modules)
+- _yarn changed_: Verifica quais pacotes tiveram alterações
+- _yarn version_: Release dos pacotes. Definindo a nova versão (patch, minor, major)
+- _yarn unit_: Roda os testes de todos os pacotes
+- _yarn coverage_: Roda o teste coverage para os pacotes
+
 ## Lerna
 
 `Lerna exec` irá pegar qualquer comando e executá-lo em todos os pacotes diferentes. Este comando instrui o Babel a executar em paralelo sobre cada pacote, puxando da pasta /src e compilando na pasta /lib. Não queremos incluir quaisquer testes ou histórias (que veremos mais tarde) no resultado compilado
