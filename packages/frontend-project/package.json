@@ -1,12 +1,11 @@
 {
-  "name": "frontend-project",
+  "name": "@clients/frontend-project",
   "version": "1.0.0",
   "main": "lib/index.js",
   "module": "src/index.js",
-  "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces"
-  },
   "dependencies": {
+    "@mui/material": "^5.3.1",
+    "@clients/components": "^1.0.2",
     "react": "latest",
     "react-dom": "latest",
     "styled-components": "latest"

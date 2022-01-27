@@ -1,11 +1,8 @@
 {
-  "name": "components",
+  "name": "@clients/components",
   "version": "1.0.2",
   "main": "lib/index.js",
   "module": "src/index.js",
-  "scripts": {
-    "bootstrap": "lerna bootstrap --use-workspaces"
-  },
   "dependencies": {
     "react": "latest",
     "react-dom": "latest",

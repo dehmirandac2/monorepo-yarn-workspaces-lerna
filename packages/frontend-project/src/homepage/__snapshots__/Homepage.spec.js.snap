@@ -3,5 +3,8 @@
 exports[`Homepage renders correctly 1`] = `
 <h1>
   My Homepage
+  <button
+    className=""
+  />
 </h1>
 `;

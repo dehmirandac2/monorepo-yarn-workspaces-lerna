@@ -85,3 +85,9 @@ Também queremos vincular nossas dependências raiz ao nosso pacote recém-criad
 ```
 
 Agora podemos simplesmente executar yarn bootstrap para instalar e vincular todas as dependências.
+
+## How install a local package
+
+```js
+yarn add file:packages/components
+```
