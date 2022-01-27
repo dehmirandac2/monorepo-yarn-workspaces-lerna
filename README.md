@@ -45,3 +45,43 @@ Exemplo:
 ```js
 yarn add --dev -W @babel/cli
 ```
+
+## Múltiplos Pacotes
+
+O principal motivo da estrutura de Monorepo é oferecer suporte a vários pacotes. Isso nos permite ter um único processo de lint, build, teste e lançamento para todos os pacotes. Vamos criar um pacote de entrada e adicionar um novo componente.
+
+Então, dentro de `/packages` vamos criar uma pasta chamada `/components` e configurar nosso primeiro pacote.
+
+```js
+// Em ./packages/button/package.json
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "styled-components": "latest"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "styled-components": "^5.0.0"
+  }
+}
+```
+
+Este arquivo informa aos consumidores que module ficará dentro da pasta /src e que o resultado executado pelo Babel ( main) ficará dentro de /lib. Este será o principal ponto de entrada do pacote. Listar o peerDependencies ajuda a garantir que os consumidores estejam incluindo os pacotes corretos.
+
+Também queremos vincular nossas dependências raiz ao nosso pacote recém-criado. Vamos criar um script para fazer isso dentro do nosso package.json.
+
+```js
+// Em ./package.json
+"scripts": {
+  "bootstrap": "lerna bootstrap --use-workspaces"
+}
+
+```
+
+Agora podemos simplesmente executar yarn bootstrap para instalar e vincular todas as dependências.

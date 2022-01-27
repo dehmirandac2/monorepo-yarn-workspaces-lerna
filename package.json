@@ -2,7 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js"
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
+    "coverage": "jest --coverage",
+    "unit": "jest"
   },
   "workspaces": [
     "packages/*"
@@ -13,9 +15,20 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.4.6",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.2",
+    "jest": "^27.4.7",
+    "jest-haste-map": "^27.4.6",
+    "jest-resolve": "^27.4.6",
+    "jest-styled-components": "^7.0.8",
     "lerna": "^4.0.0",
+    "react-test-renderer": "^17.0.2",
     "webpack": "^5.67.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   }
 }
